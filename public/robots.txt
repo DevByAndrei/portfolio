@@ -1,0 +1,17 @@
+# robots.txt para devbyandrei (portafolio personal)
+
+# Permite que todos los robots indexen el sitio
+User-agent: *
+Allow: /
+
+# Evita que los bots indexen archivos internos o de desarrollo
+Disallow: /assets/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /vite/
+Disallow: /@vite/
+Disallow: /__vite_ping
+
+# Sitemap (añádelo si usas uno)
+
+# Fin del archivo
