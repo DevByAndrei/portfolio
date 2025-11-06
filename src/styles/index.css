@@ -20,7 +20,9 @@
 /** Base styles */
 @layer base {
   body {
-    @apply font-poppins overflow-x-hidden;
+    @apply font-poppins ;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 }
 
