@@ -42,9 +42,9 @@ export default function Contact() {
   const [feedback, setFeedback] = useState("");
 
   const API_URL =
-    import.meta.env.MODE === "development"
-      ? "http://localhost:5000/api/sendEmail"
-      : "https://portfolio-backend-production.up.railway.app/api/sendEmail";
+    import.meta.env.MODE === "production"
+      ? "https://devbyandrei-portfolio.up.railway.app/api/sendEmail"
+      : "http://localhost:5000/api/sendEmail";
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
