@@ -20,7 +20,7 @@
 /** Base styles */
 @layer base {
   body {
-    @apply font-poppins;
+    @apply font-poppins overflow-x-hidden;
   }
 }
 
