@@ -109,7 +109,6 @@ export default function Technologies() {
     >
       {/* Page metadata for SEO and social previews */}
       <Helmet>
-        <title>Tecnologías | Portfolio Andrei</title>
         <meta
           name="description"
           content="Explora las tecnologías que manejo: Java, React, TailwindCSS, Spring, Flutter, Oracle, PostgreSQL y más."

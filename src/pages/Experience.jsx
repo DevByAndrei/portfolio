@@ -37,7 +37,6 @@ export default function Experience() {
     >
       {/* Page meta: SEO and social preview tags */}
       <Helmet>
-        <title>Experiencia | Portfolio Andrei</title>
         <meta
           name="description"
           content="Mi experiencia laboral y logros en los puestos de trabajo previos."

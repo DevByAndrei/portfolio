@@ -18,7 +18,6 @@ export default function Introduction() {
     >
       {/* SEO / social meta tags */}
       <Helmet>
-        <title>Inicio | Portfolio Andrei</title>
         <meta
           name="description"
           content="Hola, soy Andrei, Junior Full-stack Developer. Bienvenido a mi portfolio, descubre mis proyectos y habilidades."

@@ -99,7 +99,6 @@ export default function Projects() {
   return (
     <section id="projects" className="bg-bg-soft text-text-main flex flex-col items-center p-4 sm:p-8">
       <Helmet>
-        <title>Proyectos | Portfolio Andrei</title>
         <meta
           name="description"
           content="Descubre mis proyectos recientes con tecnologías modernas: Flutter, Dart, Spring Boot, PostgreSQL, React, TailwindCSS y más."

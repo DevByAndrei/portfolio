@@ -18,7 +18,6 @@ export default function AboutMe() {
     >
       {/* Page metadata for SEO / social sharing */}
       <Helmet>
-        <title>Sobre mí | Portfolio Andrei</title>
         <meta
           name="description"
           content="Soy Andrei, Junior Full-stack Developer con experiencia en Java, React y TailwindCSS. Descubre mi formación y habilidades técnicas."

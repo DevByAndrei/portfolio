@@ -99,7 +99,6 @@ export default function Contact() {
       className="bg-bg-soft text-text-main flex flex-col items-center p-4 sm:p-8"
     >
       <Helmet>
-        <title>Contacto | Portfolio Andrei</title>
         <meta
           name="description"
           content="Contáctame para proyectos, colaboraciones u oportunidades laborales. Estoy disponible para nuevas aventuras."
