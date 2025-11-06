@@ -191,9 +191,9 @@ export default function Introduction() {
             <img
               src="assets/images/profile/andrei.webp"
               alt="Foto de Andrei"
-              loading="lazy"
               className="object-cover w-full h-full"
               draggable="false"
+              fetchpriority="high"
             />
           </motion.div>
         </motion.div>
