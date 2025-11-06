@@ -66,7 +66,7 @@ function App() {
   return (
     <div id="smooth-wrapper">
       <Navbar />
-      <div id="smooth-content" className="bg-bg-soft transform-gpu">
+      <main id="smooth-content" className="bg-bg-soft transform-gpu">
         <Introduction />
         <AboutMe />
         <Technologies />
@@ -74,7 +74,7 @@ function App() {
         <Experience />
         <Contact />
         <Footer />
-      </div>
+      </main>
     </div>
   );
 }
