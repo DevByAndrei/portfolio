@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "generate:icons": "node generate-icons-index.mjs",
     "start": "node server.js",
-    "postinstall": "npm run build"
+    "postinstall": "npm install --legacy-peer-deps && npm run build"
   },
   "dependencies": {
     "@heroui/react": "^2.8.5",
