@@ -1,6 +1,7 @@
 import { useEffect, Suspense, lazy } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { Analytics } from "@vercel/analytics/next"
 
 // Lazy load components
 const Navbar = lazy(() => import("./components/Navbar"));
@@ -62,6 +63,7 @@ function App() {
           <Contact />
           <Footer />
         </main>
+        <Analytics />
       </div>
     </Suspense>
   );
