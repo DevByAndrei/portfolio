@@ -96,7 +96,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-bg-soft text-text-main flex flex-col items-center p-4 sm:p-8"
+      className="bg-bg-soft text-text-main flex flex-col items-center p-4 sm:p-8 md:pb-16"
     >
       <Helmet>
         <meta
