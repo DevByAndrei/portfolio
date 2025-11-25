@@ -41,10 +41,10 @@ export default function Contact() {
   const [status, setStatus] = useState("idle");
   const [feedback, setFeedback] = useState("");
 
-  const API_URL =
-    import.meta.env.MODE === "production"
-      ? "https://devbyandrei-portfolio.up.railway.app/api/sendEmail"
-      : "http://localhost:5000/api/sendEmail";
+  // API URL now points to Vercel serverless function
+  // In development with 'vercel dev', it runs on localhost:3000
+  // In production, it uses the relative path which Vercel handles automatically
+  const API_URL = "/api/sendEmail";
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -263,9 +263,8 @@ export default function Contact() {
                   aria-describedby={
                     errors.message ? "message-error" : undefined
                   }
-                  className={`p-3 rounded-lg bg-bg-dark text-text-main border ${
-                    errors.message ? "border-red-bright" : "border-gray-600"
-                  } focus:outline-none focus:border-red-bright focus:ring-2 focus:ring-red-bright/30 transition-colors duration-300 resize-none`}
+                  className={`p-3 rounded-lg bg-bg-dark text-text-main border ${errors.message ? "border-red-bright" : "border-gray-600"
+                    } focus:outline-none focus:border-red-bright focus:ring-2 focus:ring-red-bright/30 transition-colors duration-300 resize-none`}
                 />
                 {errors.message && (
                   <p id="message-error" className="text-sm text-red-400 mt-1">
@@ -282,30 +281,28 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isButtonDisabled}
-                  className={`bg-red-bright text-white py-3 px-6 rounded-lg font-semibold transition-colors w-fit ${
-                    isButtonDisabled
+                  className={`bg-red-bright text-white py-3 px-6 rounded-lg font-semibold transition-colors w-fit ${isButtonDisabled
                       ? "opacity-70 cursor-not-allowed"
                       : "hover:bg-red-600"
-                  }`}
+                    }`}
                 >
                   {status === "sending"
                     ? "Enviando..."
                     : status === "sent"
-                    ? "¡Enviado!"
-                    : status === "error"
-                    ? "Error al enviar"
-                    : "Enviar mensaje"}
+                      ? "¡Enviado!"
+                      : status === "error"
+                        ? "Error al enviar"
+                        : "Enviar mensaje"}
                 </button>
 
                 <p
                   aria-live="polite"
-                  className={`text-sm transition-all duration-300 ${
-                    status === "error"
+                  className={`text-sm transition-all duration-300 ${status === "error"
                       ? "text-red-400"
                       : status === "sent"
-                      ? "text-green-400"
-                      : "text-transparent"
-                  }`}
+                        ? "text-green-400"
+                        : "text-transparent"
+                    }`}
                 >
                   {feedback}
                 </p>
