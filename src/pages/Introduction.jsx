@@ -18,6 +18,7 @@ export default function Introduction() {
     >
       {/* SEO / social meta tags */}
       <Helmet>
+        <title>Andrei | Full-Stack Developer</title>
         <meta
           name="description"
           content="Hola, soy Andrei, Junior Full-stack Developer. Bienvenido a mi portfolio, descubre mis proyectos y habilidades."
@@ -159,7 +160,7 @@ export default function Introduction() {
             >
               <span className="relative z-10 flex items-center gap-2">
                 <MdOutlineFileDownload className="text-xl" />
-                Descargar CV 
+                Descargar CV
               </span>
               <span className="absolute inset-0 bg-gradient-to-r from-red-400/20 to-pink-400/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
             </motion.a>

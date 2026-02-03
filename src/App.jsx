@@ -1,4 +1,5 @@
 import { useEffect, Suspense, lazy } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { Analytics } from "@vercel/analytics/react"
@@ -12,6 +13,7 @@ const AboutMe = lazy(() => import("./pages/AboutMe"));
 const Technologies = lazy(() => import("./pages/Technologies"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
+const ErrorPage = lazy(() => import("./pages/ErrorPage"));
 
 // Initialize GSAP scroll plugins
 gsap.registerPlugin(ScrollTrigger);
@@ -43,6 +45,23 @@ function App() {
     };
   }, []);
 
+  // Main portfolio page component
+  const MainPage = () => (
+    <>
+      <Navbar />
+      <main className="bg-bg-soft transform-gpu">
+        <Introduction />
+        <AboutMe />
+        <Technologies />
+        <Projects />
+        <Experience />
+        <Contact />
+        <Footer />
+      </main>
+      <Analytics />
+    </>
+  );
+
   return (
     <Suspense
       fallback={
@@ -52,21 +71,13 @@ function App() {
         </div>
       }
     >
-      <div>
-        <Navbar />
-        <main className="bg-bg-soft transform-gpu">
-          <Introduction />
-          <AboutMe />
-          <Technologies />
-          <Projects />
-          <Experience />
-          <Contact />
-          <Footer />
-        </main>
-        <Analytics />
-      </div>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
     </Suspense>
   );
 }
 
 export default App;
+
