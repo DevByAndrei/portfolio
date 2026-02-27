@@ -192,7 +192,7 @@ export default function Introduction() {
             <img
               src="assets/images/profile/andrei.webp"
               alt="Foto de Andrei"
-              className="object-cover w-full h-full"
+              className="object-contain w-full h-full scale-115"
               draggable="false"
               fetchpriority="high"
             />

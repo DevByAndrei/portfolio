@@ -55,42 +55,45 @@ export default function AboutMe() {
           <p>
             Soy un{" "}
             <span className="text-red-bright font-semibold">
-              Junior Full-stack Developer
+              Full-Stack Developer Junior
             </span>{" "}
-            apasionado por la tecnología, el aprendizaje constante y la creación
-            de soluciones que combinan buen diseño, funcionalidad y rendimiento.
-            Me gusta entender cómo funcionan las cosas, mejorar lo que ya existe
-            y experimentar con nuevas ideas hasta dar con algo realmente útil y
-            diferente.
+            con una sólida base técnica, galardonado con el{" "}
+            <span className="text-white font-semibold">
+              Premio CEU Ángel Herrera al Mejor Alumno
+            </span>
+            . Me apasiona crear soluciones integrales que combinen un diseño atractivo con un rendimiento excepcional.
           </p>
 
           {/* Tech stack / current focus */}
           <p>
-            Trabajo tanto en Front-end como en Back-end, con experiencia en{" "}
+            Tengo experiencia en el desarrollo frontend moderno utilizando{" "}
             <span className="text-white font-semibold">
-              Java, Svelte, TailwindCSS, Oracle y APIs
-            </span>{" "}
-            y actualmente profundizo en{" "}
-            <span className="text-white font-semibold">Spring Boot y React</span>{" "}
-            para ampliar mi stack. Me gusta escribir código limpio, mantener una
-            estructura clara y cuidar los pequeños detalles que marcan la
-            diferencia en la experiencia de usuario.
+              Svelte y Tailwind
+            </span>
+            , y conocimientos sólidos de backend orientados a{" "}
+            <span className="text-white font-semibold">
+              Java
+            </span>
+            . Actualmente, sigo formándome y aprendiendo{" "}
+            <span className="text-white font-semibold">
+              React y Spring Boot
+            </span>
+            . Mi enfoque técnico siempre prioriza las buenas prácticas, la experiencia de usuario (UX/UI) y la mejora continua del código.
           </p>
 
           {/* Team / soft skills */}
           <p>
-            Más allá de lo técnico, disfruto trabajando en equipo, compartiendo
-            ideas y buscando soluciones creativas a los retos del día a día.
-            Creo que el mejor desarrollo surge de la colaboración, la curiosidad
-            y las ganas de hacer las cosas bien. Mi objetivo es seguir creciendo
-            como profesional, aportar energía positiva al equipo y participar en
-            proyectos que me reten y me ayuden a seguir evolucionando.
+            A nivel personal y profesional, destaco por mi adaptabilidad y proactividad. Mi experiencia internacional (
+            <span className="text-white font-semibold">
+              Erasmus+
+            </span>
+            ) en un entorno multicultural me ha permitido desarrollar una gran capacidad de resolución de problemas y comunicación efectiva, valores que aplico trabajando resolutivamente en equipo.
           </p>
 
           {/* CTA: open to opportunities */}
           <p>
             Si buscas a alguien comprometido, con ganas de aprender y aportar
-            valor desde el primer día, no dudes en contactarme. Estoy listo para
+            valor desde el primer día, no dudes en contactarme. Estoy preparado para
             afrontar nuevos desafíos y contribuir al éxito de tu equipo o
             proyecto.
           </p>
@@ -141,7 +144,7 @@ export default function AboutMe() {
             >
               <span className="relative z-10 flex items-center gap-2">
                 <MdOutlineFileDownload className="text-xl" />
-                Descargar CV 
+                Descargar CV
               </span>
               <span className="absolute inset-0 bg-gradient-to-r from-red-400/20 to-pink-400/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
             </motion.a>

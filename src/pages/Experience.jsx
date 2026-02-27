@@ -87,7 +87,7 @@ export default function Experience() {
                 ETS Asset Management Factory
               </h3>
               <h4 className="text-red-bright font-medium text-lg">
-                Desarrollador de Software Junior
+                Frontend Developer
               </h4>
               <p className="text-text-muted text-sm">
                 Marzo 2025 – Junio 2025 · Prácticas
@@ -96,26 +96,19 @@ export default function Experience() {
 
             <ul className="list-disc list-inside text-text-muted mt-3 space-y-1 leading-relaxed">
               <li>
-                Adapté diseños{" "}
-                <span className="font-semibold text-white">UX/UI</span> desde{" "}
-                <span className="font-semibold text-white">Framer</span> a
-                código funcional, garantizando coherencia visual y fluidez en la
-                experiencia del usuario.
+                Implementé diseños de <span className="font-semibold text-white">Framer</span> en <span className="font-semibold text-white">Svelte</span> y <span className="font-semibold text-white">Tailwind</span>, transformando prototipos visuales en interfaces funcionales y de alta fidelidad.
               </li>
               <li>
-                Desarrollé interfaces modernas con{" "}
-                <span className="font-semibold text-white">Svelte</span> y{" "}
-                <span className="font-semibold text-white">TailwindCSS</span>,
-                mejorando la interactividad y adaptabilidad.
+                Integré y configuré componentes interactivos (carousels, animaciones) mediante librerías de <span className="font-semibold text-white">Svelte</span>.
               </li>
               <li>
-                Implementé optimizaciones de rendimiento y correcciones de
-                errores que aumentaron la estabilidad y usabilidad de la
-                aplicación.
+                Desarrollé diseños <span className="font-semibold text-white">responsive</span> adaptando interfaces a múltiples dispositivos y resoluciones.
               </li>
               <li>
-                Colaboré activamente con el equipo de desarrollo, proponiendo
-                mejoras y resolviendo bloqueos técnicos.
+                Propuse mejoras de <span className="font-semibold text-white">UX/UI</span> ante especificaciones incompletas, reforzando la usabilidad del producto.
+              </li>
+              <li>
+                Colaboré en equipo proponiendo mejoras técnicas y soluciones a bloqueos de desarrollo.
               </li>
             </ul>
           </motion.div>
@@ -134,16 +127,19 @@ export default function Experience() {
 
             <ul className="list-disc list-inside text-text-muted mt-3 space-y-1 leading-relaxed">
               <li>
-                Proporcioné soporte técnico a usuarios, resolviendo incidencias
-                presenciales y remotas con rapidez y eficacia.
+                Resolví incidencias de <span className="font-semibold text-white">software, hardware y red</span> con alta tasa de resolución en primer contacto.
               </li>
               <li>
-                Gestioné el ciclo completo de tickets —creación, seguimiento y
-                cierre— asegurando la satisfacción del cliente.
+                Gestioné el ciclo completo de <span className="font-semibold text-white"> más de 300 tickets</span> (creación, seguimiento y cierre) asegurando la continuidad operativa.
               </li>
               <li>
-                Colaboré en la supervisión de servidores y sistemas, ayudando a
-                detectar y prevenir fallos.
+                Supervisé el estado de <span className="font-semibold text-white">servidores y redes</span>, realizando mantenimiento preventivo y correctivo.
+              </li>
+              <li>
+                Instalé y configuré software corporativo; administré usuarios en <span className="font-semibold text-white">dominio</span> y contraseñas.
+              </li>
+              <li>
+                Asistí en la resolución de problemas críticos garantizando soporte inmediato y satisfacción del cliente.
               </li>
             </ul>
           </motion.div>
